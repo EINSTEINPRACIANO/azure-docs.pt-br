@@ -23,11 +23,11 @@ ms.locfileid: "60473023"
 ---
 # <a name="delete-a-directory-in-azure-active-directory"></a>Excluir um diretório no Azure Active Directory
 
-Quando um diretório do AD do Azure é excluído, todos os recursos que estão contidos no diretório também são excluídos. Prepare sua organização, minimizando a seus recursos associados antes de excluir. Somente um administrador global do Azure Active Directory (Azure AD) pode excluir um diretório do AD do Azure no portal.
+Quando um diretório do AD do Azure é excluído, todos os recursos que estão contidos neste diretório também são excluídos. Prepare sua organização, minimizando a seus recursos associados antes de excluir. Somente um administrador global do Azure Active Directory (Azure AD) pode excluir um diretório do AD do Azure no portal.
 
 ## <a name="prepare-the-directory"></a>Preparar o diretório
 
-Você não pode excluir um diretório no Azure AD até que ele passe várias verificações. Essas verificações de reduzem o risco que a exclusão de um diretório do AD do Azure negativamente afeta o acesso do usuário, como a capacidade de entrar no Office 365 ou acessar recursos no Azure. Por exemplo, se o diretório associado a uma assinatura for acidentalmente excluído, os usuários não podem acessar os recursos do Azure para essa assinatura. As seguintes condições são verificadas:
+Você não pode excluir um diretório no Azure AD até que ele passe por várias verificações. Essas verificações de reduzem o risco que a exclusão de um diretório do AD do Azure negativamente afeta o acesso do usuário, como a capacidade de entrar no Office 365 ou acessar recursos no Azure. Por exemplo, se o diretório associado a uma assinatura for acidentalmente excluído, os usuários não podem acessar os recursos do Azure para essa assinatura. As seguintes condições são verificadas:
 
 * Não pode haver nenhum usuário no diretório, exceto um administrador global que é excluir o diretório. Quaisquer outros usuários devem ser excluídos antes que o diretório possa ser excluído. Se os usuários estiverem sincronizados no local, em seguida, sincronizar primeiro deve ser desativada e os usuários devem ser excluídos no diretório de nuvem usando o portal do Azure ou os cmdlets do PowerShell do Azure.
 * Não pode haver nenhum aplicativo no diretório. Todos os aplicativos devem ser removidos antes que o diretório pode ser excluído.
